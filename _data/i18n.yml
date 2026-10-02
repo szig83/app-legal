@@ -1,0 +1,19 @@
+en:
+  other_lang_name: Magyar
+  last_updated: Last updated
+  contents: Contents
+  documents: Documents
+  contact: Contact
+  apps: Apps
+  hosted: Hosted on GitHub Pages.
+  months: [January, February, March, April, May, June, July, August, September, October, November, December]
+
+hu:
+  other_lang_name: English
+  last_updated: Utolsó frissítés
+  contents: Tartalom
+  documents: Dokumentumok
+  contact: Kapcsolat
+  apps: Alkalmazások
+  hosted: A GitHub Pages tárhelyén.
+  months: [január, február, március, április, május, június, július, augusztus, szeptember, október, november, december]

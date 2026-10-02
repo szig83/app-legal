@@ -1,0 +1,22 @@
+---
+title: Stone Runner
+description: A Stone Runner mobiljáték adatvédelmi tájékoztatója, felhasználási feltételei és támogatása.
+app: stone-runner
+doc: home
+lang: hu
+permalink: /stone-runner/hu/
+---
+{%- assign app = site.data.apps[page.app] -%}
+<div class="app-hero">
+  <img src="{{ app.icon | relative_url }}" alt="A Stone Runner ikonja" width="96" height="96">
+  <div>
+    <h1>{{ app.name }}</h1>
+    <p>{{ app.tagline.hu }} {{ app.platforms }}.</p>
+  </div>
+</div>
+
+<ul class="doc-links">
+  <li><a href="{{ '/stone-runner/hu/adatvedelem/' | relative_url }}">Adatvédelmi tájékoztató<span>Milyen adatot kezel a játék, és miért</span></a></li>
+  <li><a href="{{ '/stone-runner/hu/felhasznalasi-feltetelek/' | relative_url }}">Felhasználási feltételek<span>A játék, a vásárlás és a virtuális tételek</span></a></li>
+  <li><a href="{{ '/stone-runner/hu/tamogatas/' | relative_url }}">Támogatás<span>Segítség, gyakori kérdések és kapcsolat</span></a></li>
+</ul>

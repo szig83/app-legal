@@ -1,0 +1,33 @@
+---
+title: App Legal
+description: Privacy policies, terms and support pages for mobile apps.
+doc: home
+lang: en
+---
+<h1>App Legal</h1>
+<p class="meta">Privacy policies, terms and support pages for our mobile apps.<br>
+<span lang="hu">Mobilalkalmazásaink adatvédelmi tájékoztatói, feltételei és támogatási oldalai.</span></p>
+
+<ul class="card-list">
+  {%- for entry in site.data.apps %}
+  {%- assign slug = entry[0] -%}
+  {%- assign app = entry[1] %}
+  <li class="card">
+    <img src="{{ app.icon | relative_url }}" alt="" width="56" height="56">
+    <div>
+      <h2><a href="{{ app.docs[0].en.url | relative_url }}">{{ app.name }}</a></h2>
+      <p>{{ app.platforms }}</p>
+      <div class="links">
+        {%- for d in app.docs offset: 1 %}
+        <a href="{{ d.en.url | relative_url }}">{{ d.en.title }}</a>
+        {%- endfor %}
+      </div>
+      <div class="links" lang="hu">
+        {%- for d in app.docs offset: 1 %}
+        <a href="{{ d.hu.url | relative_url }}">{{ d.hu.title }}</a>
+        {%- endfor %}
+      </div>
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

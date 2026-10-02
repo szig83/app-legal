@@ -1,0 +1,23 @@
+# One entry per app. The key is the URL folder of the app.
+# docs: the first entry (home) is the app's landing page; the rest appear as tabs.
+
+stone-runner:
+  name: Stone Runner
+  icon: /stone-runner/icon.png
+  platforms: iOS, Android
+  tagline:
+    en: Build your own stone-age car and race it.
+    hu: Építsd meg a saját kőkorszaki járgányodat, és versenyezz vele.
+  docs:
+    - key: home
+      en: { title: Stone Runner, label: Overview, url: /stone-runner/ }
+      hu: { title: Stone Runner, label: Áttekintés, url: /stone-runner/hu/ }
+    - key: privacy
+      en: { title: Privacy Policy, label: Privacy, url: /stone-runner/privacy/ }
+      hu: { title: Adatvédelmi tájékoztató, label: Adatvédelem, url: /stone-runner/hu/adatvedelem/ }
+    - key: terms
+      en: { title: Terms of Use, label: Terms, url: /stone-runner/terms/ }
+      hu: { title: Felhasználási feltételek, label: Feltételek, url: /stone-runner/hu/felhasznalasi-feltetelek/ }
+    - key: support
+      en: { title: Support, label: Support, url: /stone-runner/support/ }
+      hu: { title: Támogatás, label: Támogatás, url: /stone-runner/hu/tamogatas/ }

@@ -1,0 +1,22 @@
+---
+title: Stone Runner
+description: Privacy Policy, Terms of Use and support for the Stone Runner mobile game.
+app: stone-runner
+doc: home
+lang: en
+permalink: /stone-runner/
+---
+{%- assign app = site.data.apps[page.app] -%}
+<div class="app-hero">
+  <img src="{{ app.icon | relative_url }}" alt="Stone Runner icon" width="96" height="96">
+  <div>
+    <h1>{{ app.name }}</h1>
+    <p>{{ app.tagline.en }} {{ app.platforms }}.</p>
+  </div>
+</div>
+
+<ul class="doc-links">
+  <li><a href="{{ '/stone-runner/privacy/' | relative_url }}">Privacy Policy<span>What data the game processes and why</span></a></li>
+  <li><a href="{{ '/stone-runner/terms/' | relative_url }}">Terms of Use<span>Playing the game, purchases and virtual items</span></a></li>
+  <li><a href="{{ '/stone-runner/support/' | relative_url }}">Support<span>Help, common questions and contact</span></a></li>
+</ul>

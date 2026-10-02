@@ -1,0 +1,35 @@
+title: App Legal
+description: Legal documents and support pages for mobile apps.
+url: https://szig83.github.io
+baseurl: /app-legal
+theme: null
+
+# Operator (data controller) shown on every app's documents.
+# Fill in the placeholders once; every page picks them up.
+operator:
+  name: "[EV NEVE]"
+  address: "[SZÉKHELY CÍME]"
+  registration_number: "[NYILVÁNTARTÁSI SZÁM]"
+  tax_number: "[ADÓSZÁM]"
+  email: szigeti.developer@gmail.com
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  toc_levels: "2"
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - scripts
